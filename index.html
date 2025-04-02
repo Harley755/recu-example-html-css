@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 900px;
+        margin: auto;
+        background-color: #ffff;
+    }
+
+    .tg {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        text-align: left;
+        background-color: transparent;
+        color: #000000;
+        vertical-align: center;
+    }
+
+    /* Bordure uniquement sur le dernier tableau */
+    .tg-detail {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid black;
+        /* Bordure autour du tableau */
+    }
+
+    .tg-detail2 {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .tg-detail th,
+    .tg-detail td {
+        border: 1px solid black;
+        /* Bordure autour des cellules */
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <table class="tg" style="margin-bottom: 10px;">
+            <tbody>
+                <tr>
+                    <td class="tg-0pky" style="width: 40%;">
+                        LOGO
+                    </td>
+                    <td class="tg-0lax" style="width: 30%;">
+                        Code Bar
+                    </td>
+                    <td class="tg-0lax" style="width: 30%;">
+                        N° quittance <br>
+                        Date : Lundi 20 Mars 2025
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="tg" style="margin-bottom: 10px;">
+            <tbody>
+                <tr>
+                    <td class="" style="width: 40%;">
+                        <strong>Agence : SIEGE ASMAB</strong>
+                    </td>
+                    <td class="" style="width: 30%;">
+                        QUITTANCE
+                    </td>
+                    <td class="" style="width: 30%;">
+                        <div>
+                            <input type="checkbox" name="statut" id="statut" value="valide" checked>
+                            <label for="">Validé</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="statut" id="statut" value="annule">
+                            <label for="">Annulé</label>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="tg" style="margin-bottom: 20px;">
+            <tbody>
+                <tr>
+                    <td class="" style="width: 50%;">
+                        <p><strong>OBJET : </strong> Dépot sur compte épargne</p>
+                        <p>(Dépot sur compte épargne par Mr DADI Samuel pour amortir)</p>
+                        <p style="margin-top: 10px;"><strong>CPTE TRÉSORERIE : </strong> Guichet SIEGE ASMAB</p>
+                        <p style="margin-top: 10px;"><strong>CAISSIER(E) : </strong> ANDREA</p>
+                        <p style="margin-top: 10px;"><strong>MONTANT : </strong> 87 500 FCFA</p>
+                        <p style="margin-top: 10px;">La somme en lettre</p>
+                    </td>
+
+                    <td class="" style="width: 50%; margin-top: 0;">
+                        <p style="margin-bottom: 10px;">Client :</p>
+                        <div style="border: 1px solid black; padding: 20px; border-radius: 5px;">
+                            <p>id. Z00000061</p>
+                            <p>Nom : John DOE</p>
+                            <p>Adresse : Glazoue ...</p>
+                            <p>No Place : HA076005ZZ</p>
+                            <p>Marché : COTONOU</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="text-align: center; padding: 10px; background-color: #cccc;">Détail de l'opération</p>
+
+
+        <table class="tg tg-detail" style="margin-bottom: 10px;">
+            <thead>
+                <th>N°</th>
+                <th>Id./Code</th>
+                <th>Désignation</th>
+                <th>Libellé de l'opération</th>
+                <th>Montant</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        E02
+                    </td>
+                    <td>
+                        Compte Epargne Courant
+                    </td>
+                    <td>
+                        Dépot sur compte épargne par Mr DADI Samuel pour amortir échéance
+                    </td>
+                    <td>
+                        37 833
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <table class="tg tg-detail2" style="margin-bottom: 150px;">
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">
+                        <p style="padding-bottom: 70px; font-weight: bold;">Signature Client</p>
+                        <p style="font-weight: bold;">Merci de votre confiance</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p style="padding-bottom: 70px; font-weight: bold;">Signature Caissier(e)</p>
+                        <p>ANDREA</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <p>Imprimée le : 02/04/2025 à 11h42 par ANDREA</p>
+    </div>
+
+</body>
+
+</html>
